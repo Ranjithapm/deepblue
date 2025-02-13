@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Type</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8EBCB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #F0F2D8;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .back-button, .search-button {
+            font-size: 24px;
+            color: #3D6B57;
+            text-decoration: none;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3D6B57;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .grid div {
+            background: #3D6B57;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .large {
+            grid-column: span 2;
+        }
+        .slider {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="back-button">&larr;</a>
+            <div class="title">Room Type</div>
+            <a href="#" class="search-button">🔍</a>
+        </div>
+        <div class="grid">
+            <div>Balcony</div>
+            <div>Bedroom</div>
+            <div class="large">Living room</div>
+            <div>Study room</div>
+            <div>Bath room</div>
+            <div>Kitchen</div>
+            <div class="large">Terrace</div>
+        </div>
+        <input type="range" class="slider" min="0" max="100">
+    </div>
+</body>
+</html>

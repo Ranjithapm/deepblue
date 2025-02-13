@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <style>
+    /* General Page Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #F2F2D0;
+    }
+
+    .container {
+      width: 375px;
+      background-color: #F2F2D0;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    /* Image Section Styling */
+    .image-section {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://media.licdn.com/dms/image/sync/v2/D4D27AQH3kzOGuesSNg/articleshare-shrink_800/articleshare-shrink_800/0/1710953452650?e=2147483647&v=beta&t=1Zpu3G8Ajf0nZX3sWET7IcyxtZQfSNfXn4TKFN8WgNM'); /* Replace with the actual image URL */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #2D736F;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #2D736F;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .button:hover {
+      background-color: #25655C;
+    }
+
+    .social-login {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      background-color: #eee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image Section -->
+    <div class="image-section"></div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <div class="title">Welcome!</div>
+      <button class="button">Login</button>
+      <a href="./signup1.html"><button class="button">Sign up</button></a>
+
+      <div class="social-login">Or continue with</div>
+      <div class="social-icons">
+        <div class="icon" style="background-color: #DB4437; color: white;">G</div>
+        <div class="icon" style="background-color: black; color: white;"></div>
+        <div class="icon" style="background-color: #4267B2; color: white;">f</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

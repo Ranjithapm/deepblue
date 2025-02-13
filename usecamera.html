@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Camera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8EBCB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .header {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: lightgray;
+            font-size: 14px;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: brown;
+            text-decoration: none;
+        }
+        .camera-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #87BFA5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .camera-icon::before {
+            content: '\1F4F7'; /* Unicode for camera emoji */
+            font-size: 40px;
+            color: #366E56;
+        }
+        .instruction-button {
+            background-color: #3D7D5E;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 16px;
+            width: 80%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">use camera</div>
+    <a href="#" class="back-button">&larr;</a>
+    <div class="camera-icon"></div>
+    <div class="instruction-button">
+        Use your camera and follow the instructions to capture and generate the floor plan.
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            color: #345f34;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #2d4639;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .explore-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .image-card {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+        .know-more {
+            margin-top: 10px;
+            background-color: #008CBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .know-more:hover {
+            transform: scale(1.1);
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2><b>Hi, Welcome,</b></h2>
+        <p><b>Create spaces that bring joy</b></p>
+
+        <h2><b>NEW PROJECT</b></h2>
+        <div class="buttons">
+            <button class="btn" onclick="startTask()"><i class="fas fa-play"></i> Start Task</button>
+            <button class="btn"><i class="fas fa-tasks"></i> My Task</button>
+            <button class="btn"><i class="fas fa-book"></i> User Manual</button>
+        </div>
+
+        <h2><b>EXPLORE DESIGNS !!</b></h2>
+        <p><b>Discover Your Style!</b></p>
+
+        <div class="explore-images">
+            <div class="image-card">
+                <img src="https://images.livspace-cdn.com/w:640/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/1-2025-1736068988-NDPD1/jfm-1736069001-9OxTK/living-room-1736166426-6jNnL/lr-2-1738479225-DNcWq.jpg" alt="Living Room">
+                <button class="know-more" onclick="openModal('Living Room', 'A cozy and stylish living room that creates a perfect space for relaxation and family time.')">Know More</button>
+            </div>
+            <div class="image-card">
+                <img src="https://i.ytimg.com/vi/_79wHBLPTbA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC5MMLXIcXWzWFCLFeKpC_JxnkUnQ" alt="Bedroom">
+                <button class="know-more" onclick="openModal('Bedroom', 'A modern bedroom designed for comfort, with soft lighting and elegant decor.')">Know More</button>
+            </div>
+            <div class="image-card">
+                <img src="https://d15zjc2r4e8kr7.cloudfront.net/9129/blog/LuxuryLiving.jpg" alt="Luxury Home">
+                <button class="know-more" onclick="openModal('Luxury Home', 'A luxurious home with premium interiors, perfect for elegant living.')">Know More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, text) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-text').innerText = text;
+            document.getElementById('modal').style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = "none";
+        }
+
+        function startTask() {
+            // Redirect to another page
+            window.location.href = "startnewproject.html"; // Change this to your actual page
+        }
+
+        function openPopup(url) {
+        // Opens a new popup window
+        window.open(url, 'popupWindow', 'width=800,height=600,left=300,top=100');
+        }
+    </script>
+
+</body>
+</html>

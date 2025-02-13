@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Dream Home</title>
+  <style>
+    /* General Page Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #F2F2D0;
+    }
+
+    .container {
+      width: 375px;
+      background-color: #F2F2D0;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(70, 6, 220, 0.2);
+      overflow: hidden;
+    }
+
+    /* Image Section Styling */
+    .image-section {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://media.designcafe.com/wp-content/uploads/2022/08/25190515/interior-design-cost-in-bangalore.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .progress-indicator {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #66A398;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    .dot.active {
+      opacity: 1;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f00a0a;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .next-button {
+      background-color: #2D736F;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image Section -->
+    <div class="image-section"></div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <div class="progress-indicator">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="title">Create your dream home with personalized AI design recommendations and AR visualization</div>
+      <div class="subtitle">Enjoy AI assistance to make your work easy, budget-friendly, and creative.</div>
+      <button class="next-button">Next</button>
+    </div>
+  </div>
+</body>
+</html>

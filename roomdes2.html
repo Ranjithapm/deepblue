@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAE9CF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .back-icon {
+            font-size: 20px;
+            cursor: pointer;
+            color: #A35E47;
+        }
+        .button {
+            background-color: #4F8667;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            font-size: 18px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .slider-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        input[type="range"] {
+            width: 100%;
+            accent-color: #406A4E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="back-icon">⬅</span>
+        </div>
+        <button class="button">Select Room Style</button>
+        <button class="button">Select Items Required</button>
+        <button class="button">Select Color Combinations</button>
+        <button class="button">Materials To Be Used</button>
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="50">
+        </div>
+    </div>
+</body>
+</html>

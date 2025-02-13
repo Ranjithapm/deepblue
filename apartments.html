@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8EBCB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #F0F2D8;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .back-button {
+            font-size: 24px;
+            color: brown;
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3D7D5E;
+            margin-bottom: 20px;
+        }
+        .apartment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .apartment-item {
+            background: #7FB4A6;
+            color: #3D3D3D;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back-button">&larr;</a>
+        <div class="title">Apartments</div>
+        <div class="apartment-list">
+            <div class="apartment-item">Casa Grand</div>
+            <div class="apartment-item">Eterna Heights</div>
+            <div class="apartment-item">Azure Haven</div>
+            <div class="apartment-item">Luxe Habitat</div>
+            <div class="apartment-item">Tranquil Cove</div>
+        </div>
+    </div>
+</body>
+</html>

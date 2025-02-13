@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E8EBCB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #F0F2D8;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .back-button {
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+        }
+        .search-header {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #5D7A66;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+            background: transparent;
+        }
+        .top-searches {
+            margin-top: 20px;
+        }
+        .search-item {
+            display: flex;
+            align-items: center;
+            background: #5D7A66;
+            color: white;
+            padding: 10px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+        }
+        .search-item:nth-child(even) {
+            background: #7FB4A6;
+        }
+        .search-icon {
+            margin-right: 10px;
+        }
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .bottom-nav img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back-button">&larr;</a>
+        <div class="search-header">Search</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <span class="search-icon">⚙️</span>
+        </div>
+        <div class="top-searches">
+            <div class="search-item"><span class="search-icon">🔍</span> Chennai</div>
+            <div class="search-item"><span class="search-icon">🔍</span> Coimbatore</div>
+            <div class="search-item"><span class="search-icon">🔍</span> Trichy</div>
+            <div class="search-item"><span class="search-icon">🔍</span> Madurai</div>
+            <div class="search-item"><span class="search-icon">🔍</span> Tuticorn</div>
+            <div class="search-item"><span class="search-icon">🔍</span> Dindigul</div>
+        </div>
+        <div class="bottom-nav">
+            <img src="home-icon.png" alt="Home">
+            <img src="list-icon.png" alt="List">
+            <img src="cart-icon.png" alt="Cart">
+            <img src="profile-icon.png" alt="Profile">
+        </div>
+    </div>
+</body>
+</html>

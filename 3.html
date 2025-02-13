@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Renovator App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    .page {
+      display:none;
+      background-color: #F2F2D0
+      
+
+    }
+    body {
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/035/360/543/small/ai-generated-empty-room-and-wall-and-wooden-floor-with-interesting-with-glare-from-the-window-interior-background-for-the-presentation-generative-ai-photo.jpg') no-repeat center center fixed;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #F2F2D0;
+    }
+    .container {
+      width: 375px;
+      background-color: #F2F2D0;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .image-section {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-color: #F2F2D0;
+    }
+    .content-section {
+      padding: 20px;
+      text-align: center;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0f0f0f;
+      margin-bottom: 8px;
+    }
+    .button {
+      background-color: #2D736F;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+      margin: 10px auto;
+      display: block;
+    }
+    .button:hover {
+      background-color: #25655C;
+    }
+    .social-login {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      background-color: #eee;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function navigateTo(page) {
+      const pages = document.querySelectorAll(".page");
+      pages.forEach(p => p.style.display = "none");
+      document.getElementById(page).style.display = "block";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      navigateTo("page1");
+      document.getElementById("nextButton1").addEventListener("click", function () {
+        navigateTo("page2");
+      });
+      document.getElementById("nextButton2").addEventListener("click", function () {
+        navigateTo("page3");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Page 1 -->
+    <div id="page1" class="page">
+      <div class="image-section" style="background-image: url('https://img.freepik.com/premium-photo/drawing-couch-lamp-with-picture-couch_916191-406616.jpg');"></div>
+      <div class="content-section">
+        <div class="title">THE SPACE RENOVATOR</div>
+        <button class="button" id="nextButton1">Next</button>
+      </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="page" style="display: none;">
+      <div class="image-section" style="background-image: url('https://media.designcafe.com/wp-content/uploads/2022/08/25190515/interior-design-cost-in-bangalore.jpg');"></div>
+      <div class="content-section">
+        <div class="title">Design your dream home with tailored recommendations and immersive AR visualization!</div>
+        <p>Enjoy AI assistance to make your work easy, budget-friendly, and creative.</p>
+        <button class="button" id="nextButton2">Next</button>
+      </div>
+    </div>
+    <!-- page 3-->
+    <div id="page3" class="page" style="display: none;">
+      <div class="image-section" style="background-image: url('https://www.asenseinterior.com/assets/uploads/d61e57527510ead48b47af7282fa37a3.jpg');"></div>
+      <div class="content-section">
+          <div class="title">
+              Experience real-time visualization to make informed design choices effortlessly. Let AI simplify your home design journey with smart and creative solutions.
+          </div>
+          <button class="button" id="nextButton2" onclick="rotateAndNavigate()">Next</button>
+      </div>
+  </div>
+  
+  <script>
+      function rotateAndNavigate() {
+          let button = document.getElementById("nextButton2");
+          button.style.transition = "transform 0.5s ease-in-out"; // Smooth rotation
+          button.style.transform = "rotate(360deg)";
+          
+          // Wait for the animation to finish before navigating (0.5s)
+          setTimeout(() => {
+              window.location.href = "login1.html"; // Change to your target page
+          }, 500);
+      }
+  </script>
+  
+
+<script>
+  function rotateButton() {
+      let button = document.getElementById("nextButton2");
+      let rotation = 0;
+      let interval = setInterval(() => {
+          rotation += 10; // Rotate 10 degrees per step
+          button.style.transform = `rotate(${rotation}deg)`;
+          if (rotation >= 360) clearInterval(interval); // Stop when full rotation is complete
+      }, 50);
+  }
+</script>
+
+
+
+    <!-- Page 4 -->
+    <div id="page4" class="page" style="display: none;">
+      <div class="image-section" style="background-image: url('https://media.licdn.com/dms/image/sync/v2/D4D27AQH3kzOGuesSNg/articleshare-shrink_800/articleshare-shrink_800/0/1710953452650?e=2147483647&v=beta&t=1Zpu3G8Ajf0nZX3sWET7IcyxtZQfSNfXn4TKFN8WgNM');"></div>
+      <div class="content-section">
+        <div class="title">Welcome!</div>
+        <a href="./login1.html"><button class="button">Login</button></a>
+        <a href="./signup1.html"><button class="button">Sign up</button></a>
+        <div class="social-login">Or continue with</div>
+        <div class="social-icons">
+          <div class="icon" style="background-color: #b62635; color: white;">G</div>
+          <div class="icon" style="background-color: black; color: white;">A</div>
+
+          <div class="icon" style="background-color: #1e51b7; color: white;">f</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

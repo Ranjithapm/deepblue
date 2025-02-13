@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Floor Plan</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #e9eccf;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            background-color: #f0f3d9;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .back-button {
+            font-size: 24px;
+            color: brown;
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .title {
+            color: #2c704b;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .upload-icon {
+            font-size: 50px;
+            color: #2c704b;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #5ba37b;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .note {
+            background-color: #d3ffe4;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .generate-button {
+            background-color: #2c704b;
+            color: white;
+            padding: 15px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back-button">&#8592;</a>
+        <p class="title">Drag and Drop File</p>
+        <i class="fa fa-upload upload-icon"></i>
+        <p>Or</p>
+        <a href="#" class="button">Browse</a>
+        <div class="note">
+            <p><strong>Note:</strong><br>
+            Supported file types PDF, JPG<br>
+            Size Limit: 10 MB</p>
+        </div>
+        <a href="#" class="generate-button">Generate 2D AND 3D IMAGES</a>
+    </div>
+</body>
+</html>
